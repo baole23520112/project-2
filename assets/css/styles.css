@@ -13,5 +13,90 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
 }
 
+/* ==================== Common ====================== */
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px); /* enhance when zoom in */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0 16px;
+    line-height: 50px;
+    min-width: 118px;
+    border-radius: 24.5px;
+    background: #171100;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* =================== Header ===================== */
+.header {
+    background: #FFFCF4;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+
+.header .nav ul {
+    display: flex;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul a {
+    padding: 8px 21px;
+    color: #5f5b53;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.nav li.active a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+    bottom: 6px;
+    left: 21px;
+}
+
+.nav a:hover,
+.nav li.active a {
+    position: relative;
+    color: #171100;
+    text-align: center;
+    font-size: 1.6rem;
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.sign-up-btn {
+    margin-left: 49px;
+    min-width: 144px;
+}
