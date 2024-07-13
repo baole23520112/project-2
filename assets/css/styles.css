@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary: #FFB900;
+    --font-heading: Sen, sans-serif;
+}
+
 html,
 body {
     scroll-behavior: smooth;
@@ -33,7 +38,7 @@ a {
     padding: 0 16px;
     line-height: 50px;
     min-width: 118px;
-    border-radius: 24.5px;
+    border-radius: 999px;
     background: #171100;
     color: #FFF;
     text-align: center;
@@ -41,9 +46,14 @@ a {
     font-weight: 600;
 }
 
+.btn:hover {
+    opacity: 0.9;
+}
+
 /* =================== Header ===================== */
 .header {
     background: #FFFCF4;
+    z-index: 1;
 }
 
 .header .body {
@@ -99,4 +109,164 @@ a {
 .sign-up-btn {
     margin-left: 49px;
     min-width: 144px;
+}
+
+/* ================= Hero ================= */
+.hero {
+    padding-top: 56px;
+    background: #FFFCF4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .media-block {
+    width: 48%;
+    position: relative;
+}
+
+.hero .media-block .image {
+    background-color: lightgray;
+    object-fit: cover;
+    object-position: 80% center;
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    vertical-align: bottom;
+}
+
+.hero .hero-summary {
+    width: 270px;
+    padding: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.media-block .item {
+    display: flex;
+    align-items: center;
+}
+
+.media-block .item ~ .item {
+    margin-top: 22px;
+}
+
+.media-block .item .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FFF9E8;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-block .item:nth-child(2) .icon {
+    background: #FCEFFF;
+}
+
+.media-block .item:nth-child(3) .icon {
+    background: #EBEAFF;
+}
+
+.media-block .item .info {
+    margin-left: 16px;
+}
+
+.media-block .label {
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 185.714%;
+}
+
+.media-block .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%;
+}
+
+.hero .content-block {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+
+.content-block .heading {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 117.241%;
+    letter-spacing: -1.16px;
+}
+
+.content-block .desc {
+    margin-top: 22px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+.hero .cta-group {
+    display: flex;
+    margin: 38px 0 48px;
+    align-items: center;
+}
+
+.hero .btn-cta {
+    min-width: 180px;
+    background: var(--primary);
+    font-size: 1.8rem;
+    line-height: 64px;
+}
+
+.hero .watch-video {
+    background: transparent;
+    display: flex;
+    margin-left: 28px;
+    align-items: center;
+}
+
+.hero .watch-video .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-video span {
+    margin-left: 14px;
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%;
+}
+
+.hero .stats strong {
+    padding-right: 8px;
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 122.727%;
+}
+
+.hero .stats {
+    margin-top: 8px;
+}
+
+.hero .stats strong ~ strong {
+    margin-left: 28px;
 }
