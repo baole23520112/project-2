@@ -111,9 +111,26 @@ a {
     min-width: 144px;
 }
 
+.heading {
+    color: #171100;
+    font-family: var(--font-heading);
+    line-height: 117.241%;
+    letter-spacing: -1.16px;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    font-weight: 700;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 126.316%;
+}
+
 /* ================= Hero ================= */
 .hero {
-    padding-top: 56px;
+    padding: 56px 0;
     background: #FFFCF4;
 }
 
@@ -198,15 +215,6 @@ a {
     padding: 64px 0 0 130px;
 }
 
-.content-block .heading {
-    color: #171100;
-    font-family: var(--font-heading);
-    font-size: 5.8rem;
-    font-weight: 700;
-    line-height: 117.241%;
-    letter-spacing: -1.16px;
-}
-
 .content-block .desc {
     margin-top: 22px;
     color: #5F5B53;
@@ -269,4 +277,47 @@ a {
 
 .hero .stats strong ~ strong {
     margin-left: 28px;
+}
+
+/* ================== Popular ==================== */
+.popular {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.popular-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-top .desc {
+    margin-top: 16px;
+    width: 458px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.controls .control-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+.controls .control-btn:hover {
+    color: white;
+    background: var(--primary);
 }
